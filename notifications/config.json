@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": "sber_simple_tests",
+    "environment": "PROD",
+    "comment": "sber_simple_tests",
+    "reportLink": "https://jenkins.autotests.cloud/job/sber_simple_tests/",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6330288098:AAENeGJzk2O4M52ygnryrSpbfDkB7sSc4Bs",
+    "chat": "-1001965039352",
+    "replyTo": ""
+  }
+}

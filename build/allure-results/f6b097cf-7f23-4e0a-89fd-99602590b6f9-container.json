@@ -1,0 +1,1 @@
+{"uuid":"f6b097cf-7f23-4e0a-89fd-99602590b6f9","name":"TestCreditCardPage","children":["4becac59-3c48-4ec7-8977-58d59d41dedf"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1690411055501,"stop":1690411055516}],"afters":[],"start":1690411055470,"stop":1690411075324}
