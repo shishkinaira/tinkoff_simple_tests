@@ -1,10 +1,10 @@
 {
   "base": {
     "logo": "",
-    "project": "sber_simple_tests",
+    "project": "tinkoff_simple_test",
     "environment": "PROD",
-    "comment": "sber_simple_tests",
-    "reportLink": "https://jenkins.autotests.cloud/job/sber_simple_tests/",
+    "comment": "tinkoff_simple_test",
+    "reportLink": "https://jenkins.autotests.cloud/job/tinkoff_simple_test/",
     "language": "ru",
     "allureFolder": "allure-report/",
     "enableChart": true

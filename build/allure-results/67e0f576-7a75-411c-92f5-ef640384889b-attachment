@@ -1,2 +1,0 @@
-[2023-07-26T22:37:52.395Z] [WARNING] https://www.cdn-tinkoff.ru/twa/l/a1a4f512b66b589f30e982caf0db9d32042c8338/launch-EN63e8bdc0a1e949ff86c2ad0c036efb33.min.js 6:11262 "🚀" "_satellite.readCookie is deprecated. Please use _satellite.cookie.get(\"cmatched\")."
-[2023-07-26T22:37:52.704Z] [WARNING] https://www.cdn-tinkoff.ru/twa/l/a1a4f512b66b589f30e982caf0db9d32042c8338/launch-EN63e8bdc0a1e949ff86c2ad0c036efb33.min.js 6:11262 "🚀" "_satellite.setCookie is deprecated. Please use _satellite.cookie.set(\"cmatched\", \"yes\", { expires: 7 })."

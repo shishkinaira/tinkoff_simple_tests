@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class CreditCardPage extends TestBase {
     private final SelenideElement
-            cardsTypeBlock = $(".bbFA0mIZs"),
+            cardsTypeBlock = $(byText("Все карты")),
             deliverySteps = $(byText("Бесплатно доставим карту уже сегодня")),
             setCard = $(byText("Настройте свою карту")),
             allAirlinesCard = $(byText("Кредитная карта ALL Airlines")),
