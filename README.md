@@ -38,6 +38,7 @@ ____
 </p>
 ____
 <a id="jenkins"></a>
+
 ## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/tinkoff_simple_test_by_ishishkina/)</a>
 ____
 <p align="center">  
@@ -72,7 +73,7 @@ clean tinkoff_simple_test
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/Kod3ik_qa_guru_x5/allure/)</a>
+## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/tinkoff_simple_test_by_ishishkina/allure/)</a>
 ___
 
 ### *Основная страница отчёта*
@@ -90,7 +91,7 @@ ___
 ### *Графики*
 
   <p align="center">  
-<img title="Allure Graphics" src="images/screen/allure_graths.bmp" width="850">
+<img title="Allure Graphics" src="images/screen/allure_graths.png" width="850">
 
 <img title="Allure Graphics" src="images/screen/graphs.png" width="850">  
 </p>
@@ -119,7 +120,7 @@ ____
 
 ___
 <a id="jira"></a>
-## <img alt="Allure" height="25" src="images/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-682">Jira</a>
+## <img alt="Allure" height="25" src="images/logo/Jira.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-824">Jira</a>
 ____
 <p align="center">  
 <img title="Jira" src="images/screen/jira.png" width="850">  
@@ -138,5 +139,5 @@ ____
 ## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
-<img title="Selenoid Video" src="images/video/x5.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="images/video/video.gif" width="550" height="350"  alt="video">   
 </p>
