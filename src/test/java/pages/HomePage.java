@@ -12,9 +12,9 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class HomePage extends TestBase {
     private final SelenideElement
-            headerBlock = $(".aboCbR8Wx"),
+            headerBlock = $("div [role='navigation']"),
             recomendedProducts = $(byText("Рекомендуемые продукты")),
-            trustOfClients = $(byText("Нам доверяют более 30 млн клиентов")),
+            trustOfClients = $(byText("Нам доверяют более 36 млн клиентов")),
             qrCode = $(byTitle("qrCode")),
             footer =  $("footer");
 

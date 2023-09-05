@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class PaymentsPage extends TestBase {
     private final SelenideElement
-            headerBlock = $(".aboCbR8Wx"),
+            headerBlock = $("div [role='navigation']"),
             recomendedProducts = $(byText("Сервисы для массовых выплат")),
             footer =  $("footer");
 
