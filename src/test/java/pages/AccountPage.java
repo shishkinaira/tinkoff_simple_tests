@@ -10,8 +10,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class AccountPage extends TestBase {
     private final SelenideElement
-            headerBlock = $(".aboCbR8Wx"),
-            recomendedProducts = $(byText("Расчетный счет на ваших условиях")),
+            headerBlock = $("div [role='navigation']"),
+            recomendedProducts = $(byText("Сервисы для массовых выплат")),
             footer =  $("footer");
 
 

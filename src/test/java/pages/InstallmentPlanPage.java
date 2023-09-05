@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
@@ -12,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class InstallmentPlanPage extends TestBase {
     private final SelenideElement
-            headerBlock = $(".aboCbR8Wx"),
+            headerBlock = $("div [role='navigation']"),
             recomendedProducts = $(byText("Покупайте товары у наших партнеров в рассрочку от Тинькофф")),
             purchaseTerms = $(byText("Условия покупки")),
             POS = $(byText("POS-кредит")),

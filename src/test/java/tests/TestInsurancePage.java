@@ -3,13 +3,12 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.InstallmentPlanPage;
 import pages.InsurancePage;
 
 import static io.qameta.allure.Allure.step;
 
 
-public class TesinsurancePage extends TestBase {
+public class TestInsurancePage extends TestBase {
     InsurancePage insurancePage = new InsurancePage();
     @Tag("tinkoff_simple_test")
     @Test
