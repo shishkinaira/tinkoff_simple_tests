@@ -3,19 +3,18 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.HomePage;
 import pages.InstallmentPlanPage;
 
 import static io.qameta.allure.Allure.step;
 
 
-public class TestinstallmentPlanPage extends TestBase {
+public class TestInstallmentPlanPage extends TestBase {
     InstallmentPlanPage installmentPlanPage = new InstallmentPlanPage();
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница о Рассрочках содержит основные блоки")
     public void homePageBlocksExists() {
-        step("Открываем главную страницу", () -> {
+        step("Открываем страницу", () -> {
             installmentPlanPage.openPage();
         });
 

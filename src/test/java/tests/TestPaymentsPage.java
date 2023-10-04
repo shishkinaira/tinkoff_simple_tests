@@ -15,7 +15,7 @@ public class TestPaymentsPage extends TestBase {
     @Test
     @DisplayName("Проверка, что страница о Выплатах содержит основные блоки")
     public void homePageBlocksExists() {
-        step("Открываем главную страницу", () -> {
+        step("Открываем страницу", () -> {
             paymentsPage.openPage();
         });
 
