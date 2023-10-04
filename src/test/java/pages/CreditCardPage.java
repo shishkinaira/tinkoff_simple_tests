@@ -1,5 +1,6 @@
 package pages;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
@@ -20,51 +21,57 @@ public class CreditCardPage extends TestBase {
             creditTinkoPremiumffCard = $(byText("Кредитная карта S7 — Tinkoff Premium")),
             footer =  $("footer");
 
-
+    @Step("Открываем страницу")
     public CreditCardPage openPage() {
         open("cards/credit-cards/");
         return this;
     }
-
+    @Step("Проверяем что хедер присутствует на странице")
     public CreditCardPage checkСardsTypeBlockExists() {
         cardsTypeBlock.should(exist);
         return this;
     }
-
+    @Step("Проверяем что блок Доставки присутствует на странице")
     public CreditCardPage checkDeliveryStepsBlockExists() {
         deliverySteps.should(exist);
         return this;
     }
-
+    @Step("Проверяем что блок Кредитных карт присутствует на странице")
     public CreditCardPage checkSetCardBlockExists() {
         setCard.should(exist);
         return this;
     }
-
+    @Step("Проверяем что блок  карт AllAirlines присутствует на странице")
     public CreditCardPage checkAllAirlinesCardBlockExists() {
         allAirlinesCard.should(exist);
         return this;
     }
+    @Step("Проверяем что блок  карт AllAirlines Premium присутствует на странице")
     public CreditCardPage checkAllAirlinesPremiumCardBlockExists() {
         allAirlinesPremiumCard.should(exist);
         return this;
     }
+    @Step("Проверяем что блок  карт Drive присутствует на странице")
     public CreditCardPage checkTinkoffDriveCardBlockExists() {
         tinkoffDriveCard.should(exist);
         return this;
     }
+    @Step("Проверяем что блок  карт AllGames присутствует на странице")
     public CreditCardPage checkAllGamesCardBlockExists() {
         allGamesCard.should(exist);
         return this;
     }
+    @Step("Проверяем что блок Credit Tinkoff карт присутствует на странице")
     public CreditCardPage checkCreditTinkoffCardBlockExists() {
         creditTinkoffCard.should(exist);
         return this;
     }
-    public CreditCardPage checkCreditTinkoPremiumffCardBlockExists() {
+    @Step("Проверяем что блок Credit Tinkoff карт присутствует на странице")
+    public CreditCardPage checkCreditTinkoffPremiumCardBlockExists() {
         creditTinkoPremiumffCard.should(exist);
         return this;
     }
+    @Step("Проверяем что футер присутствует на странице")
     public CreditCardPage checkFooterExists() {
         footer.should(exist);
         return this;

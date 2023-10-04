@@ -15,7 +15,7 @@ public class TestAccountPage extends TestBase {
     @Test
     @DisplayName("Проверка, что страница о Расчетном счете содержит основные блоки")
     public void homePageBlocksExists() {
-        step("Открываем главную страницу", () -> {
+        step("Открываем страницу", () -> {
             accountPage.openPage();
         });
 

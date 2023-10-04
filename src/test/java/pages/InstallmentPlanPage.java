@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import tests.TestBase;
 
@@ -19,31 +20,33 @@ public class InstallmentPlanPage extends TestBase {
             POS = $(byText("POS-кредит")),
             footer =  $("footer");
 
-
+    @Step("Открываем страницу")
     public InstallmentPlanPage openPage() {
         open("loans/pos-loans/");
         return this;
     }
-
+    @Step("Проверяем что хедер присутствует на странице")
     public InstallmentPlanPage checkHeaderBlockExists() {
         headerBlock.should(exist);
         return this;
     }
-
+    @Step("Проверяем что футер присутствует на странице")
     public InstallmentPlanPage checkRecomendedProductsBlockExists() {
         recomendedProducts.should(exist);
         return this;
     }
 
+    @Step("Проверяем что блок условий покупки присутствует на странице")
     public InstallmentPlanPage checkpurchaseTermsBlockExists() {
         purchaseTerms.should(exist);
         return this;
     }
-
+    @Step("Проверяем что POS-блок присутствует на странице")
     public InstallmentPlanPage checkPOSExists() {
         POS.should(exist);
         return this;
     }
+    @Step("Проверяем что футер присутствует на странице")
     public InstallmentPlanPage checkFooterExists() {
         footer.should(exist);
         return this;

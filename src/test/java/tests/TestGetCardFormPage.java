@@ -15,7 +15,7 @@ public class TestGetCardFormPage extends TestBase {
     @DisplayName("Проверка, что страница о Дебетовая карта содержит основные блоки")
     public void homePageBlocksExists() {
 
-        GetCardFormPage getCardFormPage = new GetCardFormPage();
+ //       GetCardFormPage getCardFormPage = new GetCardFormPage();
         step("Открываем страницу", () -> {
             getCardFormPage.openPage();
         });
@@ -29,28 +29,28 @@ public class TestGetCardFormPage extends TestBase {
         });
 
         //Выполнение этого шага и следующего шага невозможно изза запрета в https://www.tinkoff.ru/robots.txt и по этому закомментирован
-//        step("Заполняем форму ФИО, телефон, имеил, дата рождения", () -> {
-//            String  randomFullName = getFullName(),
-//                    randomMobilePhone = getMobilePhone(),
-//                    randomDay = getRandomDay(),
-//                    randomMonth = getRandomMonth(),
-//                    randomYear = getRandomYear(),
-//                    randomEmail = getRandomEmail();
-//            getCardFormPage.openPage()
-//                    .setFIO(randomFullName)
-//                    .setMobilePhone(randomMobilePhone)
-//                    .setBirthDay(randomDay,randomMonth,randomYear)
-//                    .setRandomEmail(randomEmail);
-//        });
-//
-//        step("Отправляем форму", () -> {
-//            getCardFormPage.submitClick();
-//        });
-//
-//        step("Проверяем что форма отправлена", () -> {
-//            getCardFormPage.checkFormSend();
-//        });
-        step("Отправляем путую форму", () -> {
+        step("Заполняем форму ФИО, телефон, имеил, дата рождения", () -> {
+            String  randomFullName = getFullName(),
+                    randomMobilePhone = getMobilePhone(),
+                    randomDay = getRandomDay(),
+                    randomMonth = getRandomMonth(),
+                    randomYear = getRandomYear(),
+                    randomEmail = getRandomEmail();
+            getCardFormPage.openPage()
+                    .setFIO(randomFullName)
+                    .setMobilePhone(randomMobilePhone)
+                    .setBirthDay(randomDay,randomMonth,randomYear)
+                    .setRandomEmail(randomEmail);
+        });
+
+        step("Отправляем форму", () -> {
+            getCardFormPage.submitClick();
+        });
+
+        step("Проверяем что форма отправлена", () -> {
+            getCardFormPage.checkFormSend();
+        });
+        step("Отправляем пуcтую форму", () -> {
             getCardFormPage.submitClick();
         });
 
