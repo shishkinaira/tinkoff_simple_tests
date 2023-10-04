@@ -36,6 +36,31 @@ ____
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="images/logo/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
+
+В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI-тестов.
+#### Реализованы паттерны PageObject и Lambda Steps. Для генерации тестовых данных испоьзована библиотека Faker
+
+>
+> <code>Selenoid</code> выполняет запуск браузеров в контейнерах <code>Docker</code>.
+>
+> <code>Allure Report/Allure TestOps</code> формируют отчеты о запуске тестов.
+>
+> Для автоматизированной сборки проекта используется <code>Gradle</code>.
+>
+> В качестве библиотеки для модульного тестирования используется <code>JUnit 5</code>.
+>
+> <code>Jenkins</code> выполняет запуск тестов.
+> После завершения прогона отправляются уведомления с помощью бота в <code>Telegram</code>.
+
+## Покрытый функционал
+
+> Разработаны автотесты на <code>UI</code>.
+### UI
+
+- [x] Тестирование входа на сайт до 18 лет
+- [x] Тестирование входа на сайт после 18 лет
+- [x] Тестирование поиска коктейлей
+- [x] Тестирование поиска истории виски
 ____
 <a id="jenkins"></a>
 

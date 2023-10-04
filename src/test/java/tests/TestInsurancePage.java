@@ -14,7 +14,7 @@ public class TestInsurancePage extends TestBase {
     @Test
     @DisplayName("Проверка, что страница о Страховых продуктах содержит основные блоки")
     public void homePageBlocksExists() {
-        step("Открываем главную страницу", () -> {
+        step("Открываем страницу", () -> {
             insurancePage.openPage();
         });
 

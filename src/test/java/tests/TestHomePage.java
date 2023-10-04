@@ -30,8 +30,8 @@ public class TestHomePage extends TestBase {
             homePage.checktrustOfClientsBlockExists();
         });
 
-        step("Проверяем, что блок QR код присутствует на странице", () -> {
-            homePage.checkQrCodeExists();
+        step("Проверяем, что строка поиска присутствует на странице", () -> {
+            homePage.checkSearchFormExists();
         });
 
         step("Проверяем, что футер присутствует на странице", () -> {
