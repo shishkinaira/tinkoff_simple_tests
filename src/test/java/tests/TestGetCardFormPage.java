@@ -12,7 +12,7 @@ public class TestGetCardFormPage extends TestBase {
     GetCardFormPage getCardFormPage = new GetCardFormPage();
     @Tag("tinkoff_simple_test")
     @Test
-    @DisplayName("Проверка, что страница о Дебетовая карта содержит основные блоки")
+    @DisplayName("Проверка, что страница принимает валидные данные формы, проверка на отправку пустой формы и проверка что страница о Дебетовых карта содержит основные блоки")
     public void homePageBlocksExists() {
 
         step("Открываем страницу", () -> {
