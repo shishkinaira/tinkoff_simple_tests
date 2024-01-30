@@ -19,15 +19,15 @@ public class RandomUtils {
 
     public static String getMobilePhone() {
 
-        return faker.phoneNumber().phoneNumber();
+        return faker.numerify("987#######");
     }
     public static String getRandomDay() {
 
-        return String.format("%s", getRandomInt(1, 30));
+        return String.format("%s", getRandomInt(10, 30));
     }
 
     public static String getRandomMonth() {
-        return String.format("%s", getRandomInt(1, 12));
+        return String.format("%s", getRandomInt(10, 12));
     }
 
     public static String getRandomYear() {

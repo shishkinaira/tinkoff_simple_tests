@@ -19,7 +19,7 @@ public class GetCardFormPage extends TestBase {
             email = $("input[type='text'][name='email']"),
             birthdate = $("input[type='tel'][name='birthdate']"),
             submit= $(byText("Оформить")),
-            formSend = $(byText("Получите Tinkoff Black уже сегодня"));
+            formSend = $(byText("Подтвердите мобильный телефон"));
 
     @Step("Открываем страницу")
     public GetCardFormPage openPage() {
