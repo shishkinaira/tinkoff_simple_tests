@@ -18,7 +18,6 @@ public class CreditCardPage extends TestBase {
             setCard = $(byText("Настройте свою карту")),
             allAirlinesCard = $(byText("Кредитная карта ALL Airlines")),
             allAirlinesPremiumCard = $(byText("Кредитная карта ALL Airlines Premium")),
-            tinkoffDriveCard = $(byText("Кредитная карта Tinkoff Drive")),
             allGamesCard = $(byText("Кредитная карта ALL Games")),
             creditTinkoffCard = $(byText("Кредитная карта S7 — Tinkoff")),
             creditTinkoPremiumffCard = $(byText("Кредитная карта S7 — Tinkoff Premium"));
@@ -51,11 +50,6 @@ public class CreditCardPage extends TestBase {
     @Step("Проверяем что блок  карт AllAirlines Premium присутствует на странице")
     public CreditCardPage checkAllAirlinesPremiumCardBlockExists() {
         allAirlinesPremiumCard.should(exist);
-        return this;
-    }
-    @Step("Проверяем что блок  карт Drive присутствует на странице")
-    public CreditCardPage checkTinkoffDriveCardBlockExists() {
-        tinkoffDriveCard.should(exist);
         return this;
     }
     @Step("Проверяем что блок  карт AllGames присутствует на странице")
