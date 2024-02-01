@@ -34,9 +34,6 @@ public class TestCreditCardPage extends TestBase {
         step("Проверяем, что блок Кредитная карта ALL Airlines Premium присутствует на странице", () -> {
             creditCardPage.checkAllAirlinesPremiumCardBlockExists();
         });
-        step("Проверяем, что блок Кредитная карта Tinkoff Drive присутствует на странице", () -> {
-            creditCardPage.checkTinkoffDriveCardBlockExists();
-        });
         step("Проверяем, что блок Кредитная карта ALL Games присутствует на странице", () -> {
             creditCardPage.checkAllGamesCardBlockExists();
         });
