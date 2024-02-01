@@ -32,7 +32,7 @@ public class RandomUtils {
 
     public static String getRandomYear() {
 
-        return String.format("%s", getRandomInt(1900, 2000));
+        return String.format("%s", getRandomInt(1980, 2000));
     }
 
     public static String getRandomEmail() {
