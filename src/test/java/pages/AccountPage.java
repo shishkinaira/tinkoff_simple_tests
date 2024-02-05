@@ -22,16 +22,19 @@ public class AccountPage extends TestBase {
         open("corporate/payout/");
         return this;
     }
+
     @Step("Проверяем что хедер присутствует на странице")
     public AccountPage checkHeaderBlockExists() {
         verifyHeaderComponentAP.checkHeaderBlockExists();
         return this;
     }
+
     @Step("Проверяем что блок Продукты присутствует на странице")
     public AccountPage checkRecomendedProductsBlockExists() {
         recomendedProducts.should(exist);
         return this;
     }
+
     @Step("проверяем что футер присутствует на странице")
     public AccountPage checkFooterExists() {
         verifyFooterComponentAP.checkFooterBlockExists();

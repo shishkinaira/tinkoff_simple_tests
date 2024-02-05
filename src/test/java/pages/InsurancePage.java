@@ -22,16 +22,19 @@ public class InsurancePage extends TestBase {
         open("insurance/");
         return this;
     }
+
     @Step("Проверяем что хедер присутствует на странице")
     public InsurancePage checkHeaderBlockExists() {
         verifyHeaderComponentIP.checkHeaderBlockExists();
         return this;
     }
+
     @Step("Проверяем что блок рекомендаций присутствует на странице")
     public InsurancePage checkRecomendedProductsBlockExists() {
         recomendedProducts.should(exist);
         return this;
     }
+
     @Step("Проверяем что футер присутствует на странице")
     public InsurancePage checkFooterExists() {
         verifyFooterComponentIP.checkFooterBlockExists();

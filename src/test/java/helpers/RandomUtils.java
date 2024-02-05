@@ -12,6 +12,7 @@ public class RandomUtils {
 
         return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
+
     public static String getFullName() {
 
         return faker.name().fullName();
@@ -21,6 +22,7 @@ public class RandomUtils {
 
         return faker.numerify("987#######");
     }
+
     public static String getRandomDay() {
 
         return String.format("%s", getRandomInt(10, 30));

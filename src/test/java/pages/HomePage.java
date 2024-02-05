@@ -26,26 +26,31 @@ public class HomePage extends TestBase {
         open(baseUrl);
         return this;
     }
+
     @Step("Проверяем что хедер присутствует на странице")
     public HomePage checkHeaderBlockExists() {
         verifyHeaderComponentHP.checkHeaderBlockExists();
         return this;
     }
+
     @Step("Проверяем что футер присутствует на странице")
     public HomePage checkRecomendedProductsBlockExists() {
         recomendedProducts.should(exist);
         return this;
     }
+
     @Step("Проверяем что блок доверия клиентв присутствует на странице")
     public HomePage checktrustOfClientsBlockExists() {
         trustOfClients.should(exist);
         return this;
     }
+
     @Step("Проверяем что строка поиска присутствует на странице")
     public HomePage checkSearchFormExists() {
         searchForm.should(exist);
         return this;
     }
+
     @Step("Проверяем что футер присутствует на странице")
     public HomePage checkFooterExists() {
         verifyFooterComponentHP.checkFooterBlockExists();

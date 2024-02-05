@@ -4,12 +4,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.HomePage;
-import static io.qameta.allure.Allure.step;
 
+import static io.qameta.allure.Allure.step;
 
 
 public class TestHomePage extends TestBase {
     HomePage homePage = new HomePage();
+
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что главная страница содержит основные блоки")

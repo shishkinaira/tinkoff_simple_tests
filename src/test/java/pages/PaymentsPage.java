@@ -22,16 +22,19 @@ public class PaymentsPage extends TestBase {
         open("corporate/payout/");
         return this;
     }
+
     @Step("Проверяем что хедер присутствует на странице")
     public PaymentsPage checkHeaderBlockExists() {
         verifyHeaderComponentPMP.checkHeaderBlockExists();
         return this;
     }
+
     @Step("Проверяем что блок рекомендуемых продуктов присутствует на странице")
     public PaymentsPage checkRecomendedProductsBlockExists() {
         recomendedProducts.should(exist);
         return this;
     }
+
     @Step("Проверяем что футер присутствует на странице")
     public PaymentsPage checkFooterExists() {
         verifyFooterComponentPMP.checkFooterBlockExists();

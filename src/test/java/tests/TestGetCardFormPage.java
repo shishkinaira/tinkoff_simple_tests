@@ -4,12 +4,14 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.GetCardFormPage;
+
 import static helpers.RandomUtils.*;
 import static io.qameta.allure.Allure.step;
 
 
 public class TestGetCardFormPage extends TestBase {
     GetCardFormPage getCardFormPage = new GetCardFormPage();
+
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница принимает валидные данные формы, проверка на отправку пустой формы и проверка что страница о Дебетовых карта содержит основные блоки")
@@ -31,7 +33,7 @@ public class TestGetCardFormPage extends TestBase {
         });
 
         step("Заполняем форму ФИО, телефон, имеил, дата рождения", () -> {
-            String  randomFullName = getFullName(),
+            String randomFullName = getFullName(),
                     randomMobilePhone = getMobilePhone(),
                     randomDay = getRandomDay(),
                     randomMonth = getRandomMonth(),
@@ -40,7 +42,7 @@ public class TestGetCardFormPage extends TestBase {
             getCardFormPage.openPage()
                     .setFIO(randomFullName)
                     .setMobilePhone(randomMobilePhone)
-                    .setBirthDay(randomDay,randomMonth,randomYear)
+                    .setBirthDay(randomDay, randomMonth, randomYear)
                     .setRandomEmail(randomEmail);
         });
 

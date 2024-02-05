@@ -10,6 +10,7 @@ import static io.qameta.allure.Allure.step;
 
 public class TestInsurancePage extends TestBase {
     InsurancePage insurancePage = new InsurancePage();
+
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница о Страховых продуктах содержит основные блоки")

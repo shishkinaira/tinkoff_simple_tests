@@ -27,11 +27,13 @@ public class InstallmentPlanPage extends TestBase {
         open("loans/pos-loans/");
         return this;
     }
+
     @Step("Проверяем что хедер присутствует на странице")
     public InstallmentPlanPage checkHeaderBlockExists() {
         verifyHeaderComponentIPP.checkHeaderBlockExists();
         return this;
     }
+
     @Step("Проверяем что футер присутствует на странице")
     public InstallmentPlanPage checkRecomendedProductsBlockExists() {
         recomendedProducts.should(exist);
@@ -43,11 +45,13 @@ public class InstallmentPlanPage extends TestBase {
         purchaseTerms.should(exist);
         return this;
     }
+
     @Step("Проверяем что POS-блок присутствует на странице")
     public InstallmentPlanPage checkPOSExists() {
         POS.should(exist);
         return this;
     }
+
     @Step("Проверяем что футер присутствует на странице")
     public InstallmentPlanPage checkFooterExists() {
         verifyFooterComponentIPP.checkFooterBlockExists();

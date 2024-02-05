@@ -11,6 +11,7 @@ import static io.qameta.allure.Allure.step;
 
 public class TestPaymentsPage extends TestBase {
     PaymentsPage paymentsPage = new PaymentsPage();
+
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница о Выплатах содержит основные блоки")
