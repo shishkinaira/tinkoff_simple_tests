@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.$;
 
 public class VerifyFooterComponent {
-    SelenideElement footer = $("footer");
+    private final SelenideElement footer = $("footer");
 
     public VerifyFooterComponent checkFooterBlockExists() {
         footer.should(exist);

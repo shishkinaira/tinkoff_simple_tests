@@ -9,18 +9,18 @@ import static io.qameta.allure.Allure.step;
 
 
 public class TestCreditCardPage extends TestBase {
-    CreditCardPage creditCardPage = new CreditCardPage();
+    final CreditCardPage creditCardPage = new CreditCardPage();
 
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница Кредитные карты содержит основные блоки")
-    public void homePageBlocksExists() {
+    public void creditCardPageBlocksExists() {
         step("Открываем страницу Кредитные карты", () -> {
             creditCardPage.openPage();
         });
 
         step("Проверяем, что блок с типами карт присутствует на странице", () -> {
-            creditCardPage.checkСardsTypeBlockExists();
+            creditCardPage.checkCardsTypeBlockExists();
         });
 
         step("Проверяем, что блок с шагами доставки присутствует на странице", () -> {

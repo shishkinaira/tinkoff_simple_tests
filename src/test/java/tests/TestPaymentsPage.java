@@ -3,19 +3,18 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.InsurancePage;
 import pages.PaymentsPage;
 
 import static io.qameta.allure.Allure.step;
 
 
 public class TestPaymentsPage extends TestBase {
-    PaymentsPage paymentsPage = new PaymentsPage();
+    final PaymentsPage paymentsPage = new PaymentsPage();
 
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница о Выплатах содержит основные блоки")
-    public void homePageBlocksExists() {
+    public void paymentsPageBlocksExists() {
         step("Открываем страницу", () -> {
             paymentsPage.openPage();
         });

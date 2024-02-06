@@ -12,8 +12,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class AccountPage extends TestBase {
-    VerifyHeaderComponent verifyHeaderComponentAP = new VerifyHeaderComponent();
-    VerifyFooterComponent verifyFooterComponentAP = new VerifyFooterComponent();
+    private final VerifyHeaderComponent verifyHeaderComponentAP = new VerifyHeaderComponent();
+    private final VerifyFooterComponent verifyFooterComponentAP = new VerifyFooterComponent();
     private final SelenideElement
             recomendedProducts = $(byText("Сервисы для массовых выплат"));
 

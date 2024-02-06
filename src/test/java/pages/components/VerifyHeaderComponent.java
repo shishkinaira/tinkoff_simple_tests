@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.$;
 
 public class VerifyHeaderComponent {
-    SelenideElement headerBlock = $("div [role='navigation']");
+    private final SelenideElement headerBlock = $("div [role='navigation']");
 
     public VerifyHeaderComponent checkHeaderBlockExists() {
         headerBlock.should(exist);

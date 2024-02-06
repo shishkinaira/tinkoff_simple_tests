@@ -10,12 +10,12 @@ import static io.qameta.allure.Allure.step;
 
 
 public class TestGetCardFormPage extends TestBase {
-    GetCardFormPage getCardFormPage = new GetCardFormPage();
+    final GetCardFormPage getCardFormPage = new GetCardFormPage();
 
     @Tag("tinkoff_simple_test")
     @Test
-    @DisplayName("Проверка, что страница принимает валидные данные формы, проверка на отправку пустой формы и проверка что страница о Дебетовых карта содержит основные блоки")
-    public void homePageBlocksExists() {
+    @DisplayName("Проверка на отправку пустой формы и проверка что страница о Дебетовых карта содержит основные блоки")
+    public void setEmptyCardFormWorks() {
 
         step("Открываем страницу", () -> {
             getCardFormPage.openPage();
@@ -30,6 +30,19 @@ public class TestGetCardFormPage extends TestBase {
 
         step("Проверяем что после отправки пустой формы появляется алерт об отсутствии данных в форме", () -> {
             getCardFormPage.checkFormWasEmpty();
+        });
+        step("Проверяем, что футер присутствует на странице", () -> {
+            getCardFormPage.checkFooterExists();
+        });
+    }
+
+    @Tag("tinkoff_simple_test")
+    @Test
+    @DisplayName("Проверка, что страница принимает валидные данные формыи")
+    public void setFullFillCardFormWorks() {
+
+        step("Открываем страницу", () -> {
+            getCardFormPage.openPage();
         });
 
         step("Заполняем форму ФИО, телефон, имеил, дата рождения", () -> {
@@ -49,7 +62,6 @@ public class TestGetCardFormPage extends TestBase {
         step("Отправляем форму", () -> {
             getCardFormPage.submitClick();
         });
-
         step("Проверяем что форма отправлена", () -> {
             getCardFormPage.checkFormSend();
         });

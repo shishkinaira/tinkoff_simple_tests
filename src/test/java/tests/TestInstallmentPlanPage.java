@@ -9,11 +9,11 @@ import static io.qameta.allure.Allure.step;
 
 
 public class TestInstallmentPlanPage extends TestBase {
-    InstallmentPlanPage installmentPlanPage = new InstallmentPlanPage();
+    final InstallmentPlanPage installmentPlanPage = new InstallmentPlanPage();
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница о Рассрочках содержит основные блоки")
-    public void homePageBlocksExists() {
+    public void installmentPlaPageBlocksExists() {
         step("Открываем страницу", () -> {
             installmentPlanPage.openPage();
         });

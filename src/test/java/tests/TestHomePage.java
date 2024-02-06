@@ -9,7 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 
 public class TestHomePage extends TestBase {
-    HomePage homePage = new HomePage();
+    final HomePage homePage = new HomePage();
 
     @Tag("tinkoff_simple_test")
     @Test

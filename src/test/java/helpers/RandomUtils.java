@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomUtils {
-    public static Faker faker = new Faker(new Locale("ru"));
+    public static final Faker faker = new Faker(new Locale("ru"));
 
     public static int getRandomInt(int min, int max) {
 

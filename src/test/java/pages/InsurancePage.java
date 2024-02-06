@@ -12,8 +12,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class InsurancePage extends TestBase {
-    VerifyHeaderComponent verifyHeaderComponentIP = new VerifyHeaderComponent();
-    VerifyFooterComponent verifyFooterComponentIP = new VerifyFooterComponent();
+    private final VerifyHeaderComponent verifyHeaderComponentIP = new VerifyHeaderComponent();
+    private final VerifyFooterComponent verifyFooterComponentIP = new VerifyFooterComponent();
     private final SelenideElement
             recomendedProducts = $(byText("Страховые продукты Тинькофф"));
 

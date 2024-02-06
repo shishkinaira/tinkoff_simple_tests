@@ -11,8 +11,8 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class GetCardFormPage extends TestBase {
-    VerifyHeaderComponent verifyHeaderComponentGCFP = new VerifyHeaderComponent();
-    VerifyFooterComponent verifyFooterComponentGCFP = new VerifyFooterComponent();
+    private final VerifyHeaderComponent verifyHeaderComponentGCFP = new VerifyHeaderComponent();
+    private final VerifyFooterComponent verifyFooterComponentGCFP = new VerifyFooterComponent();
 
     private final SelenideElement
             fio = $("input[type='text'][name='fio']"),

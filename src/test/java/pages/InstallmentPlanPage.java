@@ -2,21 +2,18 @@ package pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import pages.components.VerifyFooterComponent;
 import pages.components.VerifyHeaderComponent;
 import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
-import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.byTitle;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class InstallmentPlanPage extends TestBase {
-    VerifyHeaderComponent verifyHeaderComponentIPP = new VerifyHeaderComponent();
-    VerifyFooterComponent verifyFooterComponentIPP = new VerifyFooterComponent();
+    private final VerifyHeaderComponent verifyHeaderComponentIPP = new VerifyHeaderComponent();
+    private final VerifyFooterComponent verifyFooterComponentIPP = new VerifyFooterComponent();
     private final SelenideElement
             recomendedProducts = $(byText("Покупайте товары у наших партнеров в рассрочку от Тинькофф")),
             purchaseTerms = $(byText("Условия покупки")),

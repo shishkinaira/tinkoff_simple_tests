@@ -9,13 +9,12 @@ import tests.TestBase;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.byTitle;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class HomePage extends TestBase {
-    VerifyHeaderComponent verifyHeaderComponentHP = new VerifyHeaderComponent();
-    VerifyFooterComponent verifyFooterComponentHP = new VerifyFooterComponent();
+    private final VerifyHeaderComponent verifyHeaderComponentHP = new VerifyHeaderComponent();
+    private final VerifyFooterComponent verifyFooterComponentHP = new VerifyFooterComponent();
     private final SelenideElement
             recomendedProducts = $(byText("Рекомендуемые продукты")),
             trustOfClients = $(byText("Нам доверяют более 38 млн клиентов")),
