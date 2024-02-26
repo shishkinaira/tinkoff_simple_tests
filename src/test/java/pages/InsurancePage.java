@@ -4,18 +4,17 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.VerifyFooterComponent;
 import pages.components.VerifyHeaderComponent;
-import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class InsurancePage extends TestBase {
+public class InsurancePage {
     private final VerifyHeaderComponent verifyHeaderComponentIP = new VerifyHeaderComponent();
     private final VerifyFooterComponent verifyFooterComponentIP = new VerifyFooterComponent();
     private final SelenideElement
-            recomendedProducts = $(byText("Страховые продукты Тинькофф"));
+            recommendedProducts = $(byText("Страховые продукты Тинькофф"));
 
     @Step("Открываем страницу")
     public InsurancePage openPage() {
@@ -30,8 +29,8 @@ public class InsurancePage extends TestBase {
     }
 
     @Step("Проверяем что блок рекомендаций присутствует на странице")
-    public InsurancePage checkRecomendedProductsBlockExists() {
-        recomendedProducts.should(exist);
+    public InsurancePage checkRecommendedProductsBlockExists() {
+        recommendedProducts.should(exist);
         return this;
     }
 

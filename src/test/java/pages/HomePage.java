@@ -4,7 +4,6 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.VerifyFooterComponent;
 import pages.components.VerifyHeaderComponent;
-import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Configuration.baseUrl;
@@ -12,12 +11,12 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class HomePage extends TestBase {
+public class HomePage {
     private final VerifyHeaderComponent verifyHeaderComponentHP = new VerifyHeaderComponent();
     private final VerifyFooterComponent verifyFooterComponentHP = new VerifyFooterComponent();
     private final SelenideElement
-            recomendedProducts = $(byText("Рекомендуемые продукты")),
-            trustOfClients = $(byText("Нам доверяют более 38 млн клиентов")),
+            recommendedProducts = $(byText("Рекомендуемые продукты")),
+            trustOfClients = $(byText("Нам доверяют более 40 млн клиентов")),
             searchForm = $(byText("Поиск по ответам на вопросы"));
 
     @Step("Открываем страницу")
@@ -33,8 +32,8 @@ public class HomePage extends TestBase {
     }
 
     @Step("Проверяем что футер присутствует на странице")
-    public HomePage checkRecomendedProductsBlockExists() {
-        recomendedProducts.should(exist);
+    public HomePage checkRecommendedProductsBlockExists() {
+        recommendedProducts.should(exist);
         return this;
     }
 

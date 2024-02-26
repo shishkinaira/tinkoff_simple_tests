@@ -10,6 +10,7 @@ import static io.qameta.allure.Allure.step;
 
 public class TestInstallmentPlanPage extends TestBase {
     final InstallmentPlanPage installmentPlanPage = new InstallmentPlanPage();
+
     @Tag("tinkoff_simple_test")
     @Test
     @DisplayName("Проверка, что страница о Рассрочках содержит основные блоки")
@@ -23,7 +24,7 @@ public class TestInstallmentPlanPage extends TestBase {
         });
 
         step("Проверяем, что основной блок присутствует на странице", () -> {
-            installmentPlanPage.checkRecomendedProductsBlockExists();
+            installmentPlanPage.checkRecommendedProductsBlockExists();
         });
 
         step("Проверяем, что блок Нам доверяют присутствует на странице", () -> {

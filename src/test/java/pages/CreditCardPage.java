@@ -4,7 +4,6 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.VerifyFooterComponent;
 import pages.components.VerifyHeaderComponent;
-import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selectors.byText;
@@ -12,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 @SuppressWarnings("ALL")
-public class CreditCardPage extends TestBase {
+public class CreditCardPage {
     private final VerifyHeaderComponent verifyHeaderComponentCCP = new VerifyHeaderComponent();
     private final VerifyFooterComponent verifyFooterComponentCCP = new VerifyFooterComponent();
     private final SelenideElement

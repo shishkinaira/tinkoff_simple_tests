@@ -24,7 +24,7 @@ public class TestHomePage extends TestBase {
         });
 
         step("Проверяем, что блок Рекомендуемые продукты присутствует на странице", () -> {
-            homePage.checkRecomendedProductsBlockExists();
+            homePage.checkRecommendedProductsBlockExists();
         });
 
         step("Проверяем, что блок Нам доверяют присутствует на странице", () -> {

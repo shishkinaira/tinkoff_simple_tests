@@ -24,7 +24,7 @@ public class TestInsurancePage extends TestBase {
         });
 
         step("Проверяем, что основной блок присутствует на странице", () -> {
-            insurancePage.checkRecomendedProductsBlockExists();
+            insurancePage.checkRecommendedProductsBlockExists();
         });
 
         step("Проверяем, что футер присутствует на странице", () -> {

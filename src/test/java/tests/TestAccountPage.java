@@ -24,7 +24,7 @@ public class TestAccountPage extends TestBase {
         });
 
         step("Проверяем, что основной блок присутствует на странице", () -> {
-            accountPage.checkRecomendedProductsBlockExists();
+            accountPage.checkRecommendedProductsBlockExists();
         });
 
         step("Проверяем, что футер присутствует на странице", () -> {

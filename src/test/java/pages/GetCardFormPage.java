@@ -4,13 +4,13 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.VerifyFooterComponent;
 import pages.components.VerifyHeaderComponent;
-import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
-public class GetCardFormPage extends TestBase {
+public class GetCardFormPage {
     private final VerifyHeaderComponent verifyHeaderComponentGCFP = new VerifyHeaderComponent();
     private final VerifyFooterComponent verifyFooterComponentGCFP = new VerifyFooterComponent();
 
@@ -47,7 +47,7 @@ public class GetCardFormPage extends TestBase {
     }
 
     @Step("Заполняем форму с рандомным значением ФИО")
-    public GetCardFormPage setFIO(String randomFullName) throws InterruptedException {
+    public GetCardFormPage setFIO(String randomFullName) {
         fio.sendKeys(randomFullName);
         return this;
     }

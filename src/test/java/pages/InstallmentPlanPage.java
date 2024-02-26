@@ -4,18 +4,17 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import pages.components.VerifyFooterComponent;
 import pages.components.VerifyHeaderComponent;
-import tests.TestBase;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class InstallmentPlanPage extends TestBase {
+public class InstallmentPlanPage {
     private final VerifyHeaderComponent verifyHeaderComponentIPP = new VerifyHeaderComponent();
     private final VerifyFooterComponent verifyFooterComponentIPP = new VerifyFooterComponent();
     private final SelenideElement
-            recomendedProducts = $(byText("Покупайте товары у наших партнеров в рассрочку от Тинькофф")),
+            recommendedProducts = $(byText("Покупайте товары у наших партнеров в рассрочку от Тинькофф")),
             purchaseTerms = $(byText("Условия покупки")),
             POS = $(byText("Пос-кредит"));
 
@@ -32,8 +31,8 @@ public class InstallmentPlanPage extends TestBase {
     }
 
     @Step("Проверяем что футер присутствует на странице")
-    public InstallmentPlanPage checkRecomendedProductsBlockExists() {
-        recomendedProducts.should(exist);
+    public InstallmentPlanPage checkRecommendedProductsBlockExists() {
+        recommendedProducts.should(exist);
         return this;
     }
 
